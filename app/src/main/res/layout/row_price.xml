@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_borders_button"
+    android:layout_alignParentLeft="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+
+        android:layout_alignParentTop="false"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/priceTextView">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tovar"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_toStartOf="@+id/cntButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBottom="@+id/cntButton" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/cntButton"
+        android:text=""
+        android:layout_alignParentEnd="true"
+        android:ems="3"
+        android:textSize="14sp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:maxEms="5"
+        android:layout_width="40dp"
+        style="@android:style/Widget.Holo.Light.EditText" />
+
+
+    <!-- <maestrovs.androidofficiant.spinnerwheel.WheelHorizontalView android:id="@+id/hour_horizontal"
+         app:visibleItems="2"
+         app:selectionDivider="@drawable/divider_dark_gradient_horizontal"
+         app:selectionDividerWidth="1px"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_alignParentEnd="true"
+
+         />-->
+
+
+</RelativeLayout>

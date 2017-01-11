@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarFadeDuration="500">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Vino red nerberry barrows rlingon dialect transport"
+                android:textSize="22sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/person_name"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/person_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_alignParentBottom="false"
+                    android:gravity="center_vertical"
+                    tools:text="25 uhy" />
+
+                <EditText
+                    android:id="@+id/cntButton"
+                    android:layout_height="36dp"
+
+                    android:layout_toStartOf="@+id/unitTW"
+                    android:ems="3"
+                    android:inputType="numberDecimal"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:text="шт"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/unitTW"
+                    android:layout_toLeftOf="@+id/sendBt"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/sendBt"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/deleteBt"
+                    app:srcCompat="@android:drawable/ic_menu_send"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/transparent_nobord_button" />
+
+                <ImageView
+                    android:id="@+id/deleteBt"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                    android:background="@drawable/transparent_nobord_button" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

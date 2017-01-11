@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/indigo_500" >
+
+        <ImageButton
+            android:id="@+id/settingsBackBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/indigo_500"
+            android:src="@drawable/ic_keyboard_arrow_left_white_36dp" />
+
+        <TextView
+            android:id="@+id/userDRewsCNT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/indigo_50" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/indigo_50"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text="IP address"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_a70" />
+
+            <EditText
+                android:id="@+id/editIP"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:text="127.0.0.1"
+                android:textColor="@color/dark_gray" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text="Порт"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/dark_gray_a70"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/editPort"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:text="80"
+                android:textColor="@color/dark_gray"
+                android:visibility="invisible">
+
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/settings_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ash" />
+
+            <Button
+                android:id="@+id/settingsSubscriptionBt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/go_next"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/indigo_50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:id="@+id/saveButton"
+                    android:background="@drawable/blue_button1"
+                    android:textColor="#f6f0f0"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

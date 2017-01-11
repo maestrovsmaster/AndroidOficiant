@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="48dp"
+    android:background="@color/indigo_600"
+    >
+
+    <ImageButton
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:id="@+id/closeButton"
+        android:background="@drawable/transparent_nobord_button"
+        android:src="@drawable/ic_arrow_back_white_36dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/abarTitle"
+        android:layout_toRightOf="@+id/closeButton"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="48dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:visibility="gone" />
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/searchBt"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_home_white_36dp"
+        android:layout_marginLeft="2dp"
+        android:alpha=".7"
+        android:visibility="visible"
+        android:background="@drawable/transparent_nobord_button" />
+
+
+
+</RelativeLayout>
